@@ -115,7 +115,7 @@ pd.DataFrame({"states":df.index,"clusters":clusters})
 
 df["cluster_no"]=clusters
 
-####HİYERARŞİK KÜMELEME####
+####Hierarchical clustering ####
 
 from scipy.cluster.hierarchy import linkage
 hc_complete=linkage(df,"complete")
@@ -155,7 +155,7 @@ plt.show()
 
 
 
-###TEMELBİLEŞENANALİZİ/PCA###
+###PCA###
 df=pd.read_csv(r"C:\Users\hp\PycharmProjects\pythonProject2\USArrests.csv")
 df.dropna(inplace=True)
 df=df._get_numeric_data()
